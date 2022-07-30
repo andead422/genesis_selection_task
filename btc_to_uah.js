@@ -82,9 +82,9 @@ function validate_email(email)
     return /^[\w\d-_.]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-async function send_email(callback)
+function send_email(callback)
 {
-    request_price(async (req_rate) => { 
+    request_price((req_rate) => { 
         let ex_rate = req_rate.price;
         const email_arr = fs.readFileSync('emails.txt', 'utf8').split(',');
         let mailOptions;
