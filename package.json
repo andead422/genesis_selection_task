@@ -1,0 +1,14 @@
+{
+  "name": "selection_task",
+  "version": "1.0.0",
+  "description": "node.js web app on docker",
+  "author": "Andrii Kulieshov",
+  "license": "MIT",
+  "main": "btc_to_uah.js",
+  "scripts": {
+    "start": "node btc_to_uah.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.7.7"
+  }
+}
